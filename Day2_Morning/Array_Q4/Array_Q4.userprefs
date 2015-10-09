@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="Array_Q4/Array_Q4.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Array_Q4/Program.cs">
+    <Files>
+      <File FileName="Array_Q4/Program.cs" Line="18" Column="28" />
+      <File FileName="Array_Q4/Person.cs" Line="22" Column="4" />
+      <File FileName="Array_Q4/SortPersonsByName.cs" Line="11" Column="65" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
