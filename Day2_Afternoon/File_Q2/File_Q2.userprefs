@@ -1,8 +1,8 @@
-﻿<Properties StartupItem="Generics_Q1/Generics_Q1.csproj">
+﻿<Properties StartupItem="File_Q2/File_Q2.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Generics_Q1/LinkedList.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="File_Q2/Program.cs">
     <Files>
-      <File FileName="Generics_Q1/LinkedList.cs" Line="74" Column="6" />
+      <File FileName="File_Q2/Program.cs" Line="94" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
