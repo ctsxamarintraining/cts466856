@@ -1,1 +1,12 @@
-﻿<Properties StartupItem="Practice(2)-Q2/Practice(2)-Q2.csproj" />
+﻿<Properties StartupItem="Practice(2)-Q1/Practice(2)-Q1.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Practice(2)-Q2/Program.cs">
+    <Files>
+      <File FileName="Practice(2)-Q2/Program.cs" Line="32" Column="54" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

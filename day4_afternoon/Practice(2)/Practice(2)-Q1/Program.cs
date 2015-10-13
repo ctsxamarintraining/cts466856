@@ -27,8 +27,8 @@ namespace Practice2Q1
 				//Console.WriteLine ("Exception : {0}\ninput value must be an integer", ArgEx.Message);
 				Console.WriteLine ("InvalidNumber");
 			}
-			catch (Exception Ex) {
-				Console.WriteLine (Ex.Message);
+			catch (Exception) {
+				Console.WriteLine ("InvalidNumber");
 			}
 			finally{
 				Console.WriteLine ("Goodbye");
