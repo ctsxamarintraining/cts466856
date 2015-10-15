@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Day6_Q1/Day6_Q1.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Day6_Q1/Person.cs">
+    <Files>
+      <File FileName="Day6_Q1/Program.cs" Line="10" Column="18" />
+      <File FileName="Day6_Q1/myEnumerator.cs" Line="21" Column="20" />
+      <File FileName="Day6_Q1/myEnumerable.cs" Line="4" Column="18" />
+      <File FileName="Day6_Q1/Person.cs" Line="10" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

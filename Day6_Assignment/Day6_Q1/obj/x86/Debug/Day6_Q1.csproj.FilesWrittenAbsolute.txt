@@ -1,0 +1,5 @@
+/Users/ranbijay/Documents/Xamarin/Assignments/Day6_Assignment/Day6_Q1/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/ranbijay/Documents/Xamarin/Assignments/Day6_Assignment/Day6_Q1/bin/Debug/Day6_Q1.exe.mdb
+/Users/ranbijay/Documents/Xamarin/Assignments/Day6_Assignment/Day6_Q1/bin/Debug/Day6_Q1.exe
+/Users/ranbijay/Documents/Xamarin/Assignments/Day6_Assignment/Day6_Q1/obj/x86/Debug/Day6_Q1.exe
+/Users/ranbijay/Documents/Xamarin/Assignments/Day6_Assignment/Day6_Q1/obj/x86/Debug/Day6_Q1.exe.mdb
