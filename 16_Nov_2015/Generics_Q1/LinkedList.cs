@@ -13,8 +13,15 @@ namespace Generics_Q1
 		}
 	}
 
-	public class LinkedList<T> :IEnumerator
+	public class LinkedList<T> :IEnumerator //IEnumerable
 	{
+		// First item index
+		// Current Item
+		
+		//public IEnumerator GetEnumerator ()
+		//{
+		//	new PersonEnumerator(this);
+		//}
 		public bool MoveNext ()
 		{
 			throw new NotImplementedException ();
