@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="Generics_Q1/Generics_Q1.csproj" RefactoringSettings.EnableRefactorings="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Generics_Q1/LinkedList.cs">
+    <Files>
+      <File FileName="Generics_Q1/Program.cs" Line="1" Column="1" />
+      <File FileName="Generics_Q1/LinkedList.cs" Line="21" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
