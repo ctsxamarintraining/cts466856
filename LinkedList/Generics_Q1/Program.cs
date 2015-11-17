@@ -64,7 +64,6 @@ namespace Generics_Q1
 			theList.Add ("string4");
 			theList.Add ("string5");
 
-			theList.Reset ();
 			foreach (var str in theList) {
 				Console.WriteLine (str);
 			}
