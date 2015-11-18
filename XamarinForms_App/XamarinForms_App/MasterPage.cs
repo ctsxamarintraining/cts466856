@@ -8,8 +8,9 @@ namespace XamarinForms_App
 	{
 		public MasterPage ()
 		{
+			NavigationPage.SetHasBackButton (this, false);
 			MenuContent[] PageListItemSource = new MenuContent[] {
-				new MenuContent (typeof(MyContentPage), "TheContentPage"),
+				new MenuContent (typeof(MyContentPage), "HomePage"),
 				new MenuContent (typeof(MyTabbedPage), "TheTabbedPage"),
 				new MenuContent (typeof(MyCarouselPage), "TheCarouselPage")
 			};

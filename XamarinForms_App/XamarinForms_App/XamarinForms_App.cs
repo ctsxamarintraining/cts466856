@@ -9,7 +9,7 @@ namespace XamarinForms_App
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new MasterPage();
+			MainPage = new NavigationPage( new MyLoginPage());
 		}
 
 		protected override void OnStart ()

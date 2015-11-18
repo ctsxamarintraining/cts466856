@@ -8,7 +8,7 @@ namespace XamarinForms_App
 	{
 		public MyTabbedPage ()
 		{
-			Title = "MyTabbedPage";
+			this.SetBinding(ContentPage.TitleProperty, "ThisPageTitle");
 			this.Children.Add (new ContentPage {
 				Title = "T1 ",
 				BackgroundColor = Color.Lime,

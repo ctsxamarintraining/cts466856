@@ -8,7 +8,7 @@ namespace XamarinForms_App
 	{
 		public MyCarouselPage ()
 		{
-			Title = "MyCarouselPage";
+			this.SetBinding(ContentPage.TitleProperty, "ThisPageTitle");
 			this.Children.Add (new ContentPage {
 				Title = "C1 ",
 				BackgroundColor = Color.FromRgb(127,200,64),

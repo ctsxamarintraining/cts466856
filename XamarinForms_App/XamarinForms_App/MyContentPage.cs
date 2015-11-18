@@ -14,15 +14,20 @@ namespace XamarinForms_App
 //				}
 //			};
 
-
-			Title = "MyContentPage";
+			this.BackgroundImage = "Images/244340_windows-8-logon-background.png";
+			this.SetBinding(ContentPage.TitleProperty, "ThisPageTitle");
 			BackgroundColor = Color.Black;
+			Button btn = new Button{ Text = "Go_to_NewPage",TextColor = "Black"};
+			btn.Clicked += (sender, e) => {
+				this.Navigation.PushAsync(new MyCustomerPage());
+			};
 			Content = new StackLayout {
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand,
 				Children = {
-					//CreateLabel ("Color.R", "R = {0:F2}"),
-					new Label { Text = "The Page",TextColor = Color.White }
+					
+					//new Label { Text = "The Page",TextColor = Color.Black }
+					btn
 				}
 			};
 		}
