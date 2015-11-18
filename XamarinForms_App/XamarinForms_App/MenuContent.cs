@@ -14,6 +14,10 @@ namespace XamarinForms_App
 
 		public Type ThisPageType { private set; get; }
 		public string ThisPageTitle { private set; get; }
+		public override string ToString ()
+		{
+			return ThisPageTitle;
+		}
 	}
 }
 

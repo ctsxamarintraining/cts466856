@@ -14,6 +14,9 @@ namespace XamarinForms_App
 //				}
 //			};
 
+
+			Title = "MyContentPage";
+			BackgroundColor = Color.Black;
 			Content = new StackLayout {
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand,

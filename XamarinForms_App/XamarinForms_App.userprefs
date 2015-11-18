@@ -1,18 +1,20 @@
 ﻿<Properties StartupItem="iOS/XamarinForms_App.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinForms_App/MasterPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinForms_App/MyContentPage.cs">
     <Files>
-      <File FileName="XamarinForms_App/XamarinForms_App.cs" Line="12" Column="29" />
-      <File FileName="XamarinForms_App/MasterPage.cs" Line="13" Column="37" />
-      <File FileName="XamarinForms_App/MyMenuPage.cs" Line="7" Column="39" />
-      <File FileName="XamarinForms_App/MenuContent.cs" Line="11" Column="28" />
-      <File FileName="XamarinForms_App/MyCarouselPage.cs" Line="52" Column="46" />
-      <File FileName="XamarinForms_App/MyTabbedPage.cs" Line="46" Column="7" />
-      <File FileName="XamarinForms_App/MyContentPage.cs" Line="15" Column="8" />
+      <File FileName="XamarinForms_App/XamarinForms_App.cs" Line="12" Column="21" />
+      <File FileName="XamarinForms_App/MasterPage.cs" Line="34" Column="89" />
+      <File FileName="XamarinForms_App/MyMenuPage.cs" Line="18" Column="31" />
+      <File FileName="XamarinForms_App/MenuContent.cs" Line="16" Column="52" />
+      <File FileName="XamarinForms_App/MyCarouselPage.cs" Line="1" Column="1" />
+      <File FileName="XamarinForms_App/MyTabbedPage.cs" Line="1" Column="1" />
+      <File FileName="XamarinForms_App/MyContentPage.cs" Line="17" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/MasterPage.cs" line="33" column="58" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

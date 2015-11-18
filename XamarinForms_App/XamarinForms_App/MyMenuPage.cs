@@ -8,7 +8,7 @@ namespace XamarinForms_App
 	{
 		public MyMenuPage (ListView PageList)
 		{
-
+			Title ="my app";
 			Label header = new Label {
 				Text = "MasterPage",
 				FontSize = Device.GetNamedSize (NamedSize.Large, typeof(Label)),

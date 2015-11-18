@@ -8,10 +8,13 @@ namespace XamarinForms_App
 	{
 		public MyTabbedPage ()
 		{
+			Title = "MyTabbedPage";
 			this.Children.Add (new ContentPage {
 				Title = "T1 ",
-				
+				BackgroundColor = Color.Lime,
 				Content = new StackLayout { 
+					HorizontalOptions = LayoutOptions.Center,
+					VerticalOptions = LayoutOptions.CenterAndExpand,
 					Children = {
 						new Label { Text = "Hello TabbedPage1" }
 					}
@@ -19,8 +22,10 @@ namespace XamarinForms_App
 			});
 			this.Children.Add (new ContentPage {
 				Title = "T2 ",
-
+				BackgroundColor = Color.Gray,
 				Content = new StackLayout { 
+					HorizontalOptions = LayoutOptions.Center,
+					VerticalOptions = LayoutOptions.CenterAndExpand,
 					Children = {
 						new Label { Text = "Hello TabbedPage2" }
 					}
@@ -28,8 +33,10 @@ namespace XamarinForms_App
 			});
 			this.Children.Add (new ContentPage {
 				Title = "T3 ",
-
+				BackgroundColor = Color.Blue,
 				Content = new StackLayout { 
+					HorizontalOptions = LayoutOptions.Center,
+					VerticalOptions = LayoutOptions.CenterAndExpand,
 					Children = {
 						new Label { Text = "Hello TabbedPage3" }
 					}
@@ -37,8 +44,10 @@ namespace XamarinForms_App
 			});
 			this.Children.Add (new ContentPage {
 				Title = "T4 ",
-
+				BackgroundColor = Color.Red,
 				Content = new StackLayout { 
+					HorizontalOptions = LayoutOptions.Center,
+					VerticalOptions = LayoutOptions.CenterAndExpand,
 					Children = {
 						new Label { Text = "Hello TabbedPage4" }
 					}
