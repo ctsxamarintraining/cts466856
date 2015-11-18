@@ -1,18 +1,16 @@
 ﻿<Properties StartupItem="iOS/XamarinForms_App.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinForms_App/MyCustomerPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinForms_App/MyContentPage.cs">
     <Files>
-      <File FileName="XamarinForms_App/XamarinForms_App.cs" Line="12" Column="53" />
+      <File FileName="XamarinForms_App/XamarinForms_App.cs" Line="1" Column="1" />
       <File FileName="XamarinForms_App/MyLoginPage.cs" Line="29" Column="5" />
-      <File FileName="XamarinForms_App/MasterPage.cs" Line="13" Column="54" />
-      <File FileName="XamarinForms_App/MyContentPage.cs" Line="22" Column="53" />
-      <File FileName="XamarinForms_App/MyCustomerPage.cs" Line="22" Column="24" />
+      <File FileName="XamarinForms_App/MasterPage.cs" Line="33" Column="1" />
+      <File FileName="XamarinForms_App/MyContentPage.cs" Line="20" Column="70" />
+      <File FileName="XamarinForms_App/MyCustomerPage.cs" Line="12" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/MasterPage.cs" line="33" column="58" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
