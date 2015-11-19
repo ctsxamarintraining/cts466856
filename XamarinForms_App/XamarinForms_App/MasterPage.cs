@@ -27,7 +27,8 @@ namespace XamarinForms_App
 				// Set the BindingContext of the detail page.			
 				Type presentPageType = (PageList.SelectedItem as MenuContent).ThisPageType;
 				this.Detail = new NavigationPage(Activator.CreateInstance(presentPageType) as Page);
-				//this.Detail.BindingContext = args.SelectedItem;
+
+				this.Detail.BindingContext = args.SelectedItem;
 
 				// Show the detail page.
 				this.IsPresented = false;

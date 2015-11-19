@@ -42,7 +42,7 @@ namespace XamarinForms_App
 					new Image {
 						BackgroundColor = Color.FromRgb (220, 220, 220),
 						Aspect = Aspect.AspectFit,
-						Source = ImageSource.FromFile ("Images/login.png")
+						Source = ImageSource.FromFile ("Images/login2.png")
 					},
 					UserNameEntry,
 					PasswordEntry,

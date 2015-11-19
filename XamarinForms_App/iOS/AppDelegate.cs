@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using System.IO;
 
 namespace XamarinForms_App.iOS
 {
@@ -12,6 +13,9 @@ namespace XamarinForms_App.iOS
 	{
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
+
+			App.folderPath = Environment.GetFolderPath (Environment.SpecialFolder.Personal);
+				
 			global::Xamarin.Forms.Forms.Init ();
 
 			// Code for starting up the Xamarin Test Cloud Agent

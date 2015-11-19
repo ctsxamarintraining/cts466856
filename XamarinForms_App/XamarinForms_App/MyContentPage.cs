@@ -17,7 +17,7 @@ namespace XamarinForms_App
 			this.BackgroundImage = "Images/244340_windows-8-logon-background.png";
 			this.SetBinding(ContentPage.TitleProperty, "ThisPageTitle");
 			BackgroundColor = Color.Black;
-			Button btn = new Button{ Text = "Go_to_NewPage",TextColor = "Black"};
+			Button btn = new Button{ Text = "Go_to_NewPage",TextColor = Color.Black};
 			btn.Clicked += (sender, e) => {
 				this.Navigation.PushAsync(new MyCustomerPage());
 			};

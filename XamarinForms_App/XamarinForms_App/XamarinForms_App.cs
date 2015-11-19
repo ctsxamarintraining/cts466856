@@ -4,8 +4,12 @@ using Xamarin.Forms;
 
 namespace XamarinForms_App
 {
+	
+
 	public class App : Application
 	{
+		public static string folderPath;
+
 		public App ()
 		{
 			// The root page of your application
