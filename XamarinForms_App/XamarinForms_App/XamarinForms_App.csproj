@@ -41,6 +41,11 @@
     <Compile Include="MyLoginPage.cs" />
     <Compile Include="MyCustomerPage.cs" />
     <Compile Include="TheCustomerDetails.cs" />
+    <Compile Include="FootballPlayerListPage.xaml.cs">
+      <DependentUpon>FootballPlayerListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FootballPlayer.cs" />
+    <Compile Include="FootballPlayerListViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -60,5 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FootballPlayerListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

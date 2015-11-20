@@ -24,10 +24,11 @@ namespace XamarinForms_App
 			};
 
 			SignIn.Clicked += (sender, e) => {
-				if (UserNameEntry.Text == "User1" && PasswordEntry.Text == "123")
-					this.Navigation.PushModalAsync (new MasterPage());
-				
-				else if (UserNameEntry.Text == "" || PasswordEntry.Text == "")
+				if (UserNameEntry.Text == "User1" && PasswordEntry.Text == "123") {
+					UserNameEntry.Text = "";
+					PasswordEntry.Text = "";
+					this.Navigation.PushModalAsync (new MasterPage ());
+				} else if (UserNameEntry.Text == "" || PasswordEntry.Text == "")
 					this.DisplayAlert ("Warning", "Incomplete Fields", "ok");
 				else {
 					this.DisplayAlert ("Warning", "Incorrect Fields", "ok");

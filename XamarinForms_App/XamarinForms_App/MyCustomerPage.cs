@@ -136,6 +136,7 @@ namespace XamarinForms_App
 				try {
 					using(SQLiteConnection connection = new SQLiteConnection (folderPath)){
 						connection.Insert (cust_details);
+						this.Navigation.PushAsync(new FootballPlayerListPage());
 					}
 				}
 				catch(SQLiteException ex){

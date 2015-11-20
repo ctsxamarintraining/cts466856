@@ -14,6 +14,7 @@ namespace XamarinForms_App
 		{
 			// The root page of your application
 			MainPage = new NavigationPage( new MyLoginPage());
+			//MainPage = new FootballPlayerListPage();
 		}
 
 		protected override void OnStart ()
