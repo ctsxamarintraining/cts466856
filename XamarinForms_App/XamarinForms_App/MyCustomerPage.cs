@@ -11,7 +11,7 @@ namespace XamarinForms_App
 
 		public MyCustomerPage ()
 		{
-			// createTheDataBase (folderPath);
+			createTheDataBase (folderPath);
 
 			BackgroundColor = Color.FromHex ("#008080");
 			Title = "Details Page";
@@ -61,6 +61,12 @@ namespace XamarinForms_App
 			};
 
 			Save_Button.Clicked += (object sender, EventArgs e) => {
+				
+				Customer_Name.Unfocus();
+				Description_Editor.Unfocus();
+				Country_Picker.Unfocus();
+				Date_of_Birth.Unfocus();
+
 				if (Customer_Name.Text == null) {
 					DisplayAlert ("Warning", "Empty Customer Name field", "Return");
 				} else if (Country_Picker.SelectedIndex == -1) {
@@ -85,37 +91,6 @@ namespace XamarinForms_App
 				}
 			};
 
-//			Content = new StackLayout {
-//				Children = {
-//					new ScrollView {
-//						VerticalOptions = LayoutOptions.Center,
-//						Content = new StackLayout { 
-//							VerticalOptions = LayoutOptions.Center,
-//							Children = {
-//								
-//								new Label {
-//									Text = "Customer Name :"
-//								},
-//								Customer_Name,
-//								new Label {
-//									Text = "Date of Birth :"
-//								},
-//								Date_of_Birth,
-//								Gender_Label,
-//								Gender_Switch,
-//								new Label {
-//									Text = "Description :"
-//								},
-//								new Label {
-//									Text = "Country :"
-//								},
-//								Country_Picker,
-//								Save_Button
-//							}
-//						}
-//					}
-//				}
-//			};
 
 			StackLayout content_stacklayout = new StackLayout ();
 
@@ -170,7 +145,7 @@ namespace XamarinForms_App
 		}
 
 		public void createTheDataBase( string thefolderpath){
-			using(SQLiteConnection connection = new SQLiteConnection (thefolderPath)){
+			using(SQLiteConnection connection = new SQLiteConnection (thefolderpath)){
 				connection.CreateTable<TheCustomerDetails>();
 			}
 		}
