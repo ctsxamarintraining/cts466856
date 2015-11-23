@@ -1,10 +1,14 @@
 ﻿using System;
+using SQLite;
 
 namespace XamarinForms_App
 {
 	public class FootballPlayer
 	{
-		public FootballPlayer (string fname,string lname,DateTime dob,string ctry,string desc)
+		public FootballPlayer()
+		{
+		}
+		public FootballPlayer (string fname,string lname,string dob,string ctry,string desc)
 		{
 			FirstName = fname;
 			LastName = lname;
@@ -12,16 +16,16 @@ namespace XamarinForms_App
 			Country = ctry;
 			Description = desc;
 			Isfavourite = false;
-			age = (DateTime.Now - Date_of_Birth);
 		}
 
+		[PrimaryKey,AutoIncrement]
+		public int Id{ get; set;}
 		public string FirstName { get; set;}
-		public string LastName { get; private set;}
-		public DateTime Date_of_Birth { get; private set;}
-		public string Country { get; private set;}
-		public string Description { get; private set;}
+		public string LastName { get;  set;}
+		public string Date_of_Birth { get; set;}
+		public string Country { get;  set;}
+		public string Description { get; set;}
 		public bool Isfavourite { get; set;}
-		public TimeSpan age{ get; private set;}
 	}
 }
 

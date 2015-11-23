@@ -1,29 +1,61 @@
 ﻿using System;
+using System.Windows.Input;
+using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using SQLite;
+using System.IO;
 
 namespace XamarinForms_App
 {
 	public class FootballPlayerListViewModel
 	{
+		private FootballPlayerViewModel selectedplayerItem;
+		public FootballPlayerViewModel SelectedPlayer{
+			set{
+				if (selectedplayerItem.Equals( value)) {
+					selectedplayerItem = value;
+					OnPropertyChanged ("SelectedPlayer");
+				}					
+			}
+			get{
+				return selectedplayerItem;
+			}
+		}
 
-		public string FirstName { get; set;}
-		public string LastName { get; private set;}
-		public DateTime Date_of_Birth { get; private set;}
-		public string Country { get; private set;}
-		public string Description { get; private set;}
-		public bool Isfavourite { get; set;}
-		public TimeSpan age{ get; private set;}
+		private ObservableCollection<FootballPlayerViewModel> thePlayerViewModelList;
+		public ObservableCollection<FootballPlayerViewModel> PlayerViewModelList{
+			set{
+				if (thePlayerViewModelList != value) {
+					thePlayerViewModelList = value;
+					OnPropertyChanged ("PlayerViewModel");
+				}					
+			}
+			get{
+				return thePlayerViewModelList;
+			}
+		}
 
 		public FootballPlayerListViewModel ()
 		{
-			Football_Player_List = new ObservableCollection<FootballPlayer> ();
-			Football_Player_List.Add (new FootballPlayer("fname","lname",DateTime.Now,"ctry","desc"));
+//		
 		}
 
-		public ObservableCollection<FootballPlayer> Football_Player_List{ get; set;}
+		protected virtual void OnPropertyChanged (string propertyName)
+		{
+			if (PropertyChanged != null)
+			{
+				PropertyChanged(this,
+					new PropertyChangedEventArgs(propertyName));
+				OnPropertyChanged ("PropertyChanged");
+			}
+		}
 
+		#region INotifyPropertyChanged implementation
 
+		public event PropertyChangedEventHandler PropertyChanged;
+
+		#endregion
 	}
 }
 

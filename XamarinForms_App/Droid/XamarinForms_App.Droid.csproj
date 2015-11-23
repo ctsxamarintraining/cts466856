@@ -15,7 +15,7 @@
     <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>XamarinForms_App.Droid</AssemblyName>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -85,7 +85,28 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\flags\Argentina.png" />
+    <AndroidResource Include="Resources\flags\Australia.png" />
+    <AndroidResource Include="Resources\flags\Belgium.png" />
+    <AndroidResource Include="Resources\flags\Canada.png" />
+    <AndroidResource Include="Resources\flags\China.png" />
+    <AndroidResource Include="Resources\flags\Croatia.png" />
+    <AndroidResource Include="Resources\flags\Denmark.png" />
+    <AndroidResource Include="Resources\flags\Ecuador.png" />
+    <AndroidResource Include="Resources\flags\Egypt.png" />
+    <AndroidResource Include="Resources\flags\El Salvador.png" />
+    <AndroidResource Include="Resources\flags\England.png" />
+    <AndroidResource Include="Resources\flags\Ethiopia.png" />
+    <AndroidResource Include="Resources\flags\Germany.png" />
+    <AndroidResource Include="Resources\flags\India.png" />
+    <AndroidResource Include="Resources\flags\Italy.png" />
+    <AndroidResource Include="Resources\flags\Japan.png" />
+    <AndroidResource Include="Resources\flags\Malaysia.png" />
+    <AndroidResource Include="Resources\flags\Netherlands.png" />
+    <AndroidResource Include="Resources\flags\New Zealand.png" />
+    <AndroidResource Include="Resources\flags\Qatar.png" />
+    <AndroidResource Include="Resources\flags\South Africa.png" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -1,15 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinForms_App.FootballPlayerListPage" Title="Football Player List Page">
 	<ContentPage.Content>
-		<ListView x:Name="FootballPlayerListView" ItemsSource="{Binding Football_Player_List}">
+		<ListView x:Name="FootballPlayerListView" ItemsSource="{Binding PlayerViewModelList}" >
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<ViewCell>
-						<StackLayout BackgroundColor="#eee" Orientation="Vertical">
-							
+						<ViewCell.ContextActions>
+							<MenuItem  Command="{Binding FavouriteCommand}" CommandParameter="{Binding .}" Text="Fav" />
+							<MenuItem  Command="{Binding DeleteCommand}" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+						</ViewCell.ContextActions>
+						<ViewCell.View>
+						<StackLayout BackgroundColor="#eee" Orientation="Vertical" HeightRequest="50" HorizontalOptions="StartAndExpand">
+							<StackLayout BackgroundColor="#eee" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+								<StackLayout Orientation="Vertical" BackgroundColor="Yellow" HorizontalOptions="Start">
+									<Image x:Name="PlayerImage"  HeightRequest="48" WidthRequest="48" />
+								</StackLayout>
+								<StackLayout Orientation="Vertical" HorizontalOptions="Fill">
 									<Label Text="{Binding FirstName}" TextColor="#f35e20" />
-								
+								</StackLayout>
+								<StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand">
+									<Image x:Name="CountryImage" Source="{Binding Country, StringFormat='flags/{0}.png'}" HeightRequest="50" HorizontalOptions="EndAndExpand"/>
+								</StackLayout>
+							</StackLayout>
 						</StackLayout>
+						</ViewCell.View>
 					</ViewCell>
 				</DataTemplate>
 			</ListView.ItemTemplate>

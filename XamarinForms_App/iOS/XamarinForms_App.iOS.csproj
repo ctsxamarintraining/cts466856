@@ -109,6 +109,27 @@
     <BundleResource Include="Resources\Images\login.png" />
     <BundleResource Include="Resources\Images\login2.png" />
     <BundleResource Include="Resources\Images\244340_windows-8-logon-background.png" />
+    <BundleResource Include="Resources\flags\Argentina.png" />
+    <BundleResource Include="Resources\flags\Australia.png" />
+    <BundleResource Include="Resources\flags\Belgium.png" />
+    <BundleResource Include="Resources\flags\Canada.png" />
+    <BundleResource Include="Resources\flags\China.png" />
+    <BundleResource Include="Resources\flags\Croatia.png" />
+    <BundleResource Include="Resources\flags\Denmark.png" />
+    <BundleResource Include="Resources\flags\Ecuador.png" />
+    <BundleResource Include="Resources\flags\Egypt.png" />
+    <BundleResource Include="Resources\flags\El Salvador.png" />
+    <BundleResource Include="Resources\flags\England.png" />
+    <BundleResource Include="Resources\flags\Ethiopia.png" />
+    <BundleResource Include="Resources\flags\Germany.png" />
+    <BundleResource Include="Resources\flags\India.png" />
+    <BundleResource Include="Resources\flags\Italy.png" />
+    <BundleResource Include="Resources\flags\Japan.png" />
+    <BundleResource Include="Resources\flags\Malaysia.png" />
+    <BundleResource Include="Resources\flags\Netherlands.png" />
+    <BundleResource Include="Resources\flags\New Zealand.png" />
+    <BundleResource Include="Resources\flags\Qatar.png" />
+    <BundleResource Include="Resources\flags\South Africa.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

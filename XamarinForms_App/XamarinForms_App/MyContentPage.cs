@@ -1,11 +1,15 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using SQLite;
+using System.IO;
+using System.Collections.ObjectModel;
 
 namespace XamarinForms_App
 {
 	public class MyContentPage : ContentPage
 	{
+
 		public MyContentPage ()
 		{
 //			Content = new StackLayout { 
@@ -18,9 +22,9 @@ namespace XamarinForms_App
 			this.SetBinding(ContentPage.TitleProperty, "ThisPageTitle");
 			BackgroundColor = Color.Black;
 			Button btn = new Button{ Text = "Go_to_NewPage",TextColor = Color.Black};
-			btn.Clicked += (sender, e) => {
-				this.Navigation.PushAsync(new MyCustomerPage());
-			};
+			btn.Clicked += (sender, e) => 
+					this.Navigation.PushAsync(new FootballPlayerListPage());
+				;
 			Content = new StackLayout {
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand,

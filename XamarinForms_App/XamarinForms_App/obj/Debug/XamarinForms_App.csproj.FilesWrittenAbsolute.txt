@@ -1,0 +1,11 @@
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile78.AssemblyAttribute.cs
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/obj/Debug/XamarinForms_App.FootballPlayerListPage.xaml
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/obj/Debug/FootballPlayerListPage.xaml.g.cs
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/bin/Debug/XamarinForms_App.dll.mdb
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/bin/Debug/XamarinForms_App.dll
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/obj/Debug/XamarinForms_App.dll
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/obj/Debug/XamarinForms_App.dll.mdb
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/bin/Debug/Xamarin.Forms.Core.dll
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/bin/Debug/SQLitePCL.raw.dll
+/Users/ranbijay/Documents/cts466856/XamarinForms_App/XamarinForms_App/bin/Debug/SQLite-net.dll
