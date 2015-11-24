@@ -8,11 +8,10 @@ namespace XamarinForms_App
 {
 	public class NewPlayerPage : ContentPage
 	{
-		private string folderPath = Path.Combine(App.folderPath,"FootballPlayerDB.db3");
+		
 
 		public NewPlayerPage ()
 		{
-			createTheDataBase (folderPath);
 
 			this.BindingContext = new FootballPlayerViewModel ();
 
@@ -123,21 +122,16 @@ namespace XamarinForms_App
 			//DisplayAlert ("folder",folderPath,"ok");
 			if (PlayerDetails != null) {
 				try {
-					using(SQLiteConnection connection = new SQLiteConnection (folderPath)){
+					using(SQLiteConnection connection = new SQLiteConnection (Path.Combine (App.folderPath, "FootballPlayerDB.db3"))){
 						connection.Insert (PlayerDetails);
-						MessagingCenter.Send(this,"DBChanged");
-						this.Navigation.PopAsync();
+
 					}
+					MessagingCenter.Send(this,"DBChanged");
+					this.Navigation.PopAsync();
 				}
 				catch(SQLiteException ex){
 					DisplayAlert ("Error",ex.Message,"return");
 				}
-			}
-		}
-
-		public void createTheDataBase( string thefolderpath){
-			using(SQLiteConnection connection = new SQLiteConnection (thefolderpath)){
-				connection.CreateTable<FootballPlayer>();
 			}
 		}
 

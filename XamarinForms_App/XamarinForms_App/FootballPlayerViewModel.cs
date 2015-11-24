@@ -12,13 +12,14 @@ namespace XamarinForms_App
 {
 	public class FootballPlayerViewModel : INotifyPropertyChanged
 	{
-		string firstName ;
+		
 		string theage;
 		bool isfavourite;
 		string description;
 		string country;
 		string date_of_Birth;
 		string lastName;
+		string firstName ;
 
 		public string FirstName { 
 			get {

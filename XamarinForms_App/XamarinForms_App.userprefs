@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="iOS/XamarinForms_App.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinForms_App/FootballPlayerListPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinForms_App/FootballPlayerListViewModel.cs">
     <Files>
-      <File FileName="XamarinForms_App/FootballPlayerListPage.xaml" Line="18" Column="68" />
-      <File FileName="XamarinForms_App/FootballPlayerListPage.xaml.cs" Line="35" Column="41" />
-      <File FileName="XamarinForms_App/FootballPlayerViewModel.cs" Line="129" Column="1" />
-      <File FileName="XamarinForms_App/obj/Debug/FootballPlayerListPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="XamarinForms_App/NewPlayerPage.cs" Line="130" Column="33" />
+      <File FileName="XamarinForms_App/FootballPlayerViewModel.cs" Line="142" Column="44" />
+      <File FileName="XamarinForms_App/FootballPlayerListPage.xaml" Line="18" Column="96" />
+      <File FileName="XamarinForms_App/FootballPlayerListPage.xaml.cs" Line="23" Column="40" />
+      <File FileName="XamarinForms_App/FootballPlayerListViewModel.cs" Line="78" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

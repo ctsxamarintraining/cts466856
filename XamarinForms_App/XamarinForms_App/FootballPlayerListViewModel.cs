@@ -42,6 +42,7 @@ namespace XamarinForms_App
 			using (SQLiteConnection connection = new SQLiteConnection (Path.Combine (App.folderPath, "FootballPlayerDB.db3"))) {
 				connection.CreateTable<FootballPlayer> ();
 			}
+
 			UpdateTheList ();
 			MessagingCenter.Subscribe<FootballPlayerViewModel> (this, "DBChanged", (obj) => {
 				UpdateTheList ();
