@@ -23,7 +23,8 @@ namespace XamarinForms_App
 			ObservableCollection<FootballPlayerViewModel> updatedlist = new ObservableCollection<FootballPlayerViewModel> ();
 
 			SQLiteConnection connection = new SQLiteConnection (folderPath);
-			var list = connection.Table<FootballPlayer> ();
+			//	var list = connection.Table<FootballPlayer> ();//
+			var list = connection.Query<FootballPlayer> ("SELECT * FROM FootballPlayer ORDER BY ISFAVOURITE,FIRSTNAME");
 			foreach (var item in list) {
 				var pvm = new FootballPlayerViewModel ();
 				pvm.FirstName = item.FirstName;

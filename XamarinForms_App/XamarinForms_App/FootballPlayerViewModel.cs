@@ -133,12 +133,12 @@ namespace XamarinForms_App
 					newplayerlist [0].Isfavourite = !(newplayerlist [0].Isfavourite);
 					connection.Update (newplayerlist [0]);
 
-					MessagingCenter.Send(this,"DBChanged");
+
 
 					Debug.WriteLine (newplayerlist.Count);
 				}
 
-
+				MessagingCenter.Send(this,"DBChanged");
 
 			});
 
