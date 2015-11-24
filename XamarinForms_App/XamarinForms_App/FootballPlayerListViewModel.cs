@@ -10,18 +10,18 @@ namespace XamarinForms_App
 {
 	public class FootballPlayerListViewModel : INotifyPropertyChanged
 	{
-		private FootballPlayerViewModel selectedplayerItem;
-		public FootballPlayerViewModel SelectedPlayer{
-			set{
-				if (selectedplayerItem.Equals( value)) {
-					selectedplayerItem = value;
-					OnPropertyChanged ("SelectedPlayer");
-				}					
-			}
-			get{
-				return selectedplayerItem;
-			}
-		}
+//		private FootballPlayerViewModel selectedplayerItem;
+//		public FootballPlayerViewModel SelectedPlayer{
+//			set{
+//				if (selectedplayerItem.Equals( value)) {
+//					selectedplayerItem = value;
+//					OnPropertyChanged ("SelectedPlayer");
+//				}					
+//			}
+//			get{
+//				return selectedplayerItem;
+//			}
+//		}
 
 		private ObservableCollection<FootballPlayerViewModel> thePlayerViewModelList;
 		public ObservableCollection<FootballPlayerViewModel> PlayerViewModelList{

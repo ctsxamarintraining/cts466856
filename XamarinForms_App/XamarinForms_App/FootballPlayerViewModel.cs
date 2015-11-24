@@ -149,11 +149,11 @@ namespace XamarinForms_App
 					List<FootballPlayer> newplayerlist = connection.Query<FootballPlayer> ("SELECT * FROM FootballPlayer WHERE FirstName = ? and LastName = ?", theplayer.FirstName, theplayer.LastName);
 					connection.Delete (newplayerlist [0]);
 
-					MessagingCenter.Send(this,"DBChanged");
+
 
 					Debug.WriteLine (newplayerlist.Count);
 				}
-
+				MessagingCenter.Send(this,"DBChanged");
 			});
 
 		}

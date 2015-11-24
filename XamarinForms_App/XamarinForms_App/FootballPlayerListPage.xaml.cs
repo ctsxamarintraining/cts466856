@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using SQLite;
 using System.IO;
 using System.Diagnostics;
+using System.Linq;
 
 namespace XamarinForms_App
 {
@@ -18,13 +19,16 @@ namespace XamarinForms_App
 			(this.BindingContext as FootballPlayerListViewModel).PlayerViewModelList = UpdateList ();
 		}
 
+
 		public ObservableCollection<FootballPlayerViewModel> UpdateList(){
+
+			InitializeComponent();
 
 			ObservableCollection<FootballPlayerViewModel> updatedlist = new ObservableCollection<FootballPlayerViewModel> ();
 
 			SQLiteConnection connection = new SQLiteConnection (folderPath);
-			//	var list = connection.Table<FootballPlayer> ();//
-			var list = connection.Query<FootballPlayer> ("SELECT * FROM FootballPlayer ORDER BY ISFAVOURITE,FIRSTNAME");
+			var list = connection.Query<FootballPlayer> ("SELECT * FROM FootballPlayer ORDER BY ISFAVOURITE DESC,FIRSTNAME ASC");				
+
 			foreach (var item in list) {
 				var pvm = new FootballPlayerViewModel ();
 				pvm.FirstName = item.FirstName;
@@ -65,12 +69,15 @@ namespace XamarinForms_App
 			InitializeComponent ();
 
 			this.FootballPlayerListView.ItemSelected += (sender, e) => {
-				(this.BindingContext as FootballPlayerListViewModel).SelectedPlayer = (e.SelectedItem as FootballPlayerViewModel);
-				this.Navigation.PushAsync (new PlayerDetailsPage (e.SelectedItem));
+//				(this.BindingContext as FootballPlayerListViewModel).SelectedPlayer = (e.SelectedItem as FootballPlayerViewModel);
+//				this.Navigation.PushAsync (new PlayerDetailsPage (e.SelectedItem));
 			};
 
 			MessagingCenter.Subscribe<FootballPlayerViewModel> (this, "DBChanged", (obj) => {
+
+
 				(this.BindingContext as FootballPlayerListViewModel).PlayerViewModelList = UpdateList ();
+
 			});
 
 		}
