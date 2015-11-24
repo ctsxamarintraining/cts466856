@@ -69,7 +69,6 @@ namespace XamarinForms_App
 					DisplayAlert ("Warning", "Empty Description field", "Return");
 				else {
 
-
 					saveToDataBase(new FootballPlayer(
 						Player_FName.Text,
 						Player_LName.Text,
@@ -126,7 +125,7 @@ namespace XamarinForms_App
 				try {
 					using(SQLiteConnection connection = new SQLiteConnection (folderPath)){
 						connection.Insert (PlayerDetails);
-						//MessagingCenter.Send(this,"DBChanged");
+						MessagingCenter.Send(this,"DBChanged");
 						this.Navigation.PopAsync();
 					}
 				}
