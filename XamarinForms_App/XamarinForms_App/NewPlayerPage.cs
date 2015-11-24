@@ -14,6 +14,8 @@ namespace XamarinForms_App
 		{
 			createTheDataBase (folderPath);
 
+			this.BindingContext = new FootballPlayerViewModel ();
+
 			BackgroundColor = Color.FromHex ("#008080");
 			Title = "Player Details";
 
@@ -49,6 +51,8 @@ namespace XamarinForms_App
 				HorizontalOptions = LayoutOptions.Center
 			};
 
+			//Save_Button.Command = this.SetBinding (Button.CommandProperty,"SaveCommand");
+
 			Save_Button.Clicked += (object sender, EventArgs e) => {
 				
 				Player_FName.Unfocus();
@@ -64,7 +68,8 @@ namespace XamarinForms_App
 				} else if (Description_Editor.Text == null)
 					DisplayAlert ("Warning", "Empty Description field", "Return");
 				else {
-					
+
+
 					saveToDataBase(new FootballPlayer(
 						Player_FName.Text,
 						Player_LName.Text,
@@ -121,6 +126,7 @@ namespace XamarinForms_App
 				try {
 					using(SQLiteConnection connection = new SQLiteConnection (folderPath)){
 						connection.Insert (PlayerDetails);
+						//MessagingCenter.Send(this,"DBChanged");
 						this.Navigation.PopAsync();
 					}
 				}

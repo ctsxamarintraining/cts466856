@@ -8,7 +8,7 @@ using System.IO;
 
 namespace XamarinForms_App
 {
-	public class FootballPlayerListViewModel
+	public class FootballPlayerListViewModel : INotifyPropertyChanged
 	{
 		private FootballPlayerViewModel selectedplayerItem;
 		public FootballPlayerViewModel SelectedPlayer{
@@ -28,7 +28,7 @@ namespace XamarinForms_App
 			set{
 				if (thePlayerViewModelList != value) {
 					thePlayerViewModelList = value;
-					OnPropertyChanged ("PlayerViewModel");
+					OnPropertyChanged ("PlayerViewModelList");
 				}					
 			}
 			get{
@@ -37,8 +37,7 @@ namespace XamarinForms_App
 		}
 
 		public FootballPlayerListViewModel ()
-		{
-//		
+		{	
 		}
 
 		protected virtual void OnPropertyChanged (string propertyName)
@@ -47,7 +46,7 @@ namespace XamarinForms_App
 			{
 				PropertyChanged(this,
 					new PropertyChangedEventArgs(propertyName));
-				OnPropertyChanged ("PropertyChanged");
+				//OnPropertyChanged ("PropertyChanged");
 			}
 		}
 
