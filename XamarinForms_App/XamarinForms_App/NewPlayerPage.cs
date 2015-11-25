@@ -33,7 +33,18 @@ namespace XamarinForms_App
 			Editor Description_Editor = new Editor ();
 
 			string[] Country_Picker_array = new string[] { 
-				"Argentina", "Australia", "Belgium", "Canada", "China", "Croatia", "Denmark", "Ecuador", "India"
+				"Argentina", "Australia", 
+				"Belgium", "Brazil", 
+				"Canada", "China", "Croatia", 
+				"Denmark", 
+				"Ecuador", "Egypt", "El Salvador", "England", "Ethiopia", 
+				"Germany", 
+				"India", "Italy", 
+				"Japan", 
+				"Malasya", 
+				"Netherlands", "NewZealand", 
+				"Qatar", 
+				"South Africa"
 			};
 
 			Picker Country_Picker = new Picker ();
@@ -54,11 +65,11 @@ namespace XamarinForms_App
 
 			Save_Button.Clicked += (object sender, EventArgs e) => {
 				
-				Player_FName.Unfocus();
-				Player_LName.Unfocus();
-				Description_Editor.Unfocus();
-				Country_Picker.Unfocus();
-				Date_of_Birth.Unfocus();
+				Player_FName.Unfocus ();
+				Player_LName.Unfocus ();
+				Description_Editor.Unfocus ();
+				Country_Picker.Unfocus ();
+				Date_of_Birth.Unfocus ();
 
 				if (Player_FName.Text == null || Player_LName.Text == null) {
 					DisplayAlert ("Warning", "Empty Player Name field", "Return");
@@ -68,11 +79,11 @@ namespace XamarinForms_App
 					DisplayAlert ("Warning", "Empty Description field", "Return");
 				else {
 
-					saveToDataBase(new FootballPlayer(
+					saveToDataBase (new FootballPlayer (
 						Player_FName.Text,
 						Player_LName.Text,
-						Date_of_Birth.Date.ToString(),
-						Country_Picker_array[Country_Picker.SelectedIndex],
+						Date_of_Birth.Date.ToString("MMMM dd, yyyy"),
+						Country_Picker_array [Country_Picker.SelectedIndex],
 						Description_Editor.Text
 					));
 
@@ -117,20 +128,20 @@ namespace XamarinForms_App
 
 		}
 
-		public void saveToDataBase(FootballPlayer PlayerDetails){
+		public void saveToDataBase (FootballPlayer PlayerDetails)
+		{
 			
 			//DisplayAlert ("folder",folderPath,"ok");
 			if (PlayerDetails != null) {
 				try {
-					using(SQLiteConnection connection = new SQLiteConnection (Path.Combine (App.folderPath, "FootballPlayerDB.db3"))){
+					using (SQLiteConnection connection = new SQLiteConnection (Path.Combine (App.folderPath, "FootballPlayerDB.db3"))) {
 						connection.Insert (PlayerDetails);
 
 					}
-					MessagingCenter.Send(this,"DBChanged");
-					this.Navigation.PopAsync();
-				}
-				catch(SQLiteException ex){
-					DisplayAlert ("Error",ex.Message,"return");
+					MessagingCenter.Send (this, "DBChanged");
+					this.Navigation.PopAsync ();
+				} catch (SQLiteException ex) {
+					DisplayAlert ("Error", ex.Message, "return");
 				}
 			}
 		}
