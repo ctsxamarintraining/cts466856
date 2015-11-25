@@ -12,7 +12,6 @@ namespace XamarinForms_App
 {
 	public class FootballPlayerViewModel : INotifyPropertyChanged
 	{
-		
 		string theage;
 		bool isfavourite;
 		string description;
@@ -32,8 +31,7 @@ namespace XamarinForms_App
 				}
 			}
 		}
-
-
+			
 		public string LastName {
 			get {
 				return lastName;
@@ -45,8 +43,7 @@ namespace XamarinForms_App
 				}
 			}
 		}
-
-
+			
 		public string Date_of_Birth {
 			get {
 				return date_of_Birth;
@@ -58,8 +55,7 @@ namespace XamarinForms_App
 				}
 			}
 		}
-
-
+			
 		public string Country {
 			get {
 				return country;
@@ -71,8 +67,7 @@ namespace XamarinForms_App
 				}
 			}
 		}
-
-
+			
 		public string Description {
 			get {
 				return description;
@@ -84,8 +79,7 @@ namespace XamarinForms_App
 				}
 			}
 		}
-
-
+			
 		public bool Isfavourite {
 			get {
 				return isfavourite;
@@ -97,9 +91,7 @@ namespace XamarinForms_App
 				}
 			}
 		}
-
-
-
+			
 		public string age { 
 			get {
 				return theage;
@@ -113,9 +105,7 @@ namespace XamarinForms_App
 		}
 
 		public ICommand SaveCommand{ get; set; }
-
 		public ICommand FavouriteCommand{ get; set; }
-
 		public ICommand DeleteCommand{ get; set; }
 
 
@@ -126,39 +116,22 @@ namespace XamarinForms_App
 			});
 
 			this.FavouriteCommand = new Command<FootballPlayerViewModel> (execute: (FootballPlayerViewModel theplayer) => {
-
 				using ( SQLiteConnection connection = new SQLiteConnection (Path.Combine (App.folderPath, "FootballPlayerDB.db3"))) {
-						
 					List<FootballPlayer> newplayerlist = connection.Query<FootballPlayer> ("SELECT * FROM FootballPlayer WHERE FirstName = ? and LastName = ?", theplayer.FirstName, theplayer.LastName);
-
 					newplayerlist [0].Isfavourite = !(newplayerlist [0].Isfavourite);
 					connection.Update (newplayerlist [0]);
-
-
-
-					Debug.WriteLine (newplayerlist.Count);
 				}
-
 				MessagingCenter.Send(this,"DBChanged");
-
 			});
 
 			this.DeleteCommand = new Command<FootballPlayerViewModel> (execute: (FootballPlayerViewModel theplayer) => {
-				
 				using (SQLiteConnection connection = new SQLiteConnection (Path.Combine (App.folderPath, "FootballPlayerDB.db3"))) {
-
 					List<FootballPlayer> newplayerlist = connection.Query<FootballPlayer> ("SELECT * FROM FootballPlayer WHERE FirstName = ? and LastName = ?", theplayer.FirstName, theplayer.LastName);
 					connection.Delete (newplayerlist [0]);
-
-
-
-					Debug.WriteLine (newplayerlist.Count);
 				}
 				MessagingCenter.Send(this,"DBChanged");
 			});
-
 		}
-
 
 		protected virtual void OnPropertyChanged (string propertyName)
 		{
@@ -168,11 +141,8 @@ namespace XamarinForms_App
 			}
 		}
 
-
 		#region INotifyPropertyChanged implementation
-
 		public event PropertyChangedEventHandler PropertyChanged;
-
 		#endregion
 	}
 }

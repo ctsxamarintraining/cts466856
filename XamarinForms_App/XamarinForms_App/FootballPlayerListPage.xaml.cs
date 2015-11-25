@@ -13,7 +13,6 @@ namespace XamarinForms_App
 	{
 		public FootballPlayerListPage ()
 		{
-
 			// add new player button
 			ToolbarItem addButton = new ToolbarItem {
 				Text = "ADD"

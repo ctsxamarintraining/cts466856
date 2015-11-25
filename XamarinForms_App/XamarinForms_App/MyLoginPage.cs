@@ -8,7 +8,6 @@ namespace XamarinForms_App
 	{
 		public MyLoginPage ()
 		{
-			
 			Title = "Login";
 			Entry UserNameEntry = new Entry {
 				Placeholder = "User Name"
@@ -22,7 +21,6 @@ namespace XamarinForms_App
 				BorderColor = Color.Blue,
 				BorderRadius = 5,
 			};
-
 			SignIn.Clicked += (sender, e) => {
 				if (UserNameEntry.Text == "User1" && PasswordEntry.Text == "123") {
 					UserNameEntry.Text = "";

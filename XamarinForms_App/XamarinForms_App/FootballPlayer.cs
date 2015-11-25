@@ -17,7 +17,6 @@ namespace XamarinForms_App
 			Description = desc;
 			Isfavourite = false;
 		}
-
 		[PrimaryKey,AutoIncrement]
 		public int Id{ get; set;}
 		public string FirstName { get; set;}

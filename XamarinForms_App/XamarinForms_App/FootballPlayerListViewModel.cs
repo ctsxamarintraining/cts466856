@@ -87,9 +87,7 @@ namespace XamarinForms_App
 		}
 
 		#region INotifyPropertyChanged implementation
-
 		public event PropertyChangedEventHandler PropertyChanged;
-
 		#endregion
 	}
 }

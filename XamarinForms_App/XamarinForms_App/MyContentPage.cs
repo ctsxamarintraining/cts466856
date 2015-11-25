@@ -9,7 +9,6 @@ namespace XamarinForms_App
 {
 	public class MyContentPage : ContentPage
 	{
-
 		public MyContentPage ()
 		{
 //			Content = new StackLayout { 
@@ -29,8 +28,6 @@ namespace XamarinForms_App
 				HorizontalOptions = LayoutOptions.Center,
 				VerticalOptions = LayoutOptions.CenterAndExpand,
 				Children = {
-					
-					//new Label { Text = "The Page",TextColor = Color.Black }
 					btn
 				}
 			};

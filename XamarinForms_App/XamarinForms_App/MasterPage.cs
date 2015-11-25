@@ -33,7 +33,6 @@ namespace XamarinForms_App
 				// Show the detail page.
 				this.IsPresented = false;
 			};
-
 			PageList.SelectedItem = PageListItemSource [0];
 		}
 	}

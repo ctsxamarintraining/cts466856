@@ -21,7 +21,6 @@ namespace XamarinForms_App
 					PageList
 				}
 			};
-
 		}
 	}
 }

@@ -4,7 +4,6 @@ using Xamarin.Forms;
 
 namespace XamarinForms_App
 {
-	
 
 	public class App : Application
 	{

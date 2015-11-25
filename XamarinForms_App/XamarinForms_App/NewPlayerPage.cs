@@ -8,11 +8,8 @@ namespace XamarinForms_App
 {
 	public class NewPlayerPage : ContentPage
 	{
-		
-
 		public NewPlayerPage ()
 		{
-
 			this.BindingContext = new FootballPlayerViewModel ();
 
 			BackgroundColor = Color.FromHex ("#008080");

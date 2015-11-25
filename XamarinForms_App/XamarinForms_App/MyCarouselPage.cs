@@ -32,6 +32,7 @@ namespace XamarinForms_App
 					}
 				}
 			});
+
 			this.Children.Add (new ContentPage {
 				Title = "C3 ",
 				BackgroundColor = Color.FromRgb(64,127,200),
@@ -43,6 +44,7 @@ namespace XamarinForms_App
 					}
 				}
 			});
+
 			this.Children.Add (new ContentPage {
 				Title = "C4 ",
 				BackgroundColor = Color.FromRgb(64,200,64),
@@ -54,6 +56,7 @@ namespace XamarinForms_App
 					}
 				}
 			});
+
 			this.Children.Add (new ContentPage {
 				Title = "C5 ",
 				BackgroundColor = Color.FromRgb(127,0,64),

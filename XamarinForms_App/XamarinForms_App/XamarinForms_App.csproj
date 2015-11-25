@@ -39,7 +39,6 @@
     <Compile Include="MyTabbedPage.cs" />
     <Compile Include="MyContentPage.cs" />
     <Compile Include="MyLoginPage.cs" />
-    <Compile Include="TheCustomerDetails.cs" />
     <Compile Include="FootballPlayerListPage.xaml.cs">
       <DependentUpon>FootballPlayerListPage.xaml</DependentUpon>
     </Compile>
