@@ -1,13 +1,27 @@
 ﻿<Properties StartupItem="iOS/XamarinForms_App.iOS.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinForms_App/FootballPlayerListViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinForms_App/MyLoginPage.cs">
     <Files>
-      <File FileName="XamarinForms_App/NewPlayerPage.cs" Line="1" Column="1" />
-      <File FileName="XamarinForms_App/FootballPlayerViewModel.cs" Line="1" Column="1" />
-      <File FileName="XamarinForms_App/FootballPlayerListPage.xaml" Line="1" Column="1" />
-      <File FileName="XamarinForms_App/FootballPlayerListPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="XamarinForms_App/FootballPlayerListViewModel.cs" Line="80" Column="65" />
+      <File FileName="XamarinForms_App/FootballPlayerListPage.xaml" Line="24" Column="10" />
+      <File FileName="XamarinForms_App/MyLoginPage.cs" Line="50" Column="6" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="XamarinForms_App" expanded="True">
+            <Node name="XamarinForms_App" expanded="True">
+              <Node name="MyLoginPage.cs" selected="True" />
+            </Node>
+            <Node name="XamarinForms_App.iOS" expanded="True">
+              <Node name="Packages" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="flags" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

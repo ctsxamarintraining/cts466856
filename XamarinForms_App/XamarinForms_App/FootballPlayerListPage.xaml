@@ -34,12 +34,11 @@
 		</ListView>
 	</ContentPage.Content>
 </ContentPage>
-
 <!--						<StackLayout BackgroundColor="#eee" Orientation="Vertical" HeightRequest="50">
 							<StackLayout BackgroundColor="#eee" Orientation="Horizontal" Padding="5">
-								
+
 								<Image x:Name="PlayerImage"  HeightRequest="48" WidthRequest="48" />
-								
+
 								<StackLayout Orientation="Vertical">
 									<Label Text="{Binding FirstName}" TextColor="#f35e20" />
 									<Label Text="{Binding FirstName}" TextColor="#f35e20" />
@@ -47,6 +46,6 @@
 
 
 								<Image x:Name="CountryImage" Source="{Binding Country, StringFormat='flags/{0}.png'}" HeightRequest="50" />
-								
+
 							</StackLayout>
 						</StackLayout>-->
