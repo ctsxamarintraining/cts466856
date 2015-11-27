@@ -69,7 +69,8 @@ namespace BinarySearchTreeConsole
 	{
 		public Node root;
 		public Node current_Node;
-
+		public int level = 0;
+		private int levelCalculator = 0;
 
 		#region IEnumerable implementation
 
@@ -82,11 +83,13 @@ namespace BinarySearchTreeConsole
 
 
 		public bool Add (int data)
-		{
+		{ 
 			Node toAdd = new Node ();
 			toAdd.NodeValue = data;
 			toAdd.lesserSubNode = null;
 			toAdd.greaterSubNode = null;
+
+			levelCalculator = 0;
 
 			if (root == null) {
 				root = toAdd;
@@ -100,20 +103,24 @@ namespace BinarySearchTreeConsole
 					return false;
 
 				} else if (current_Node.NodeValue > data) {
+					levelCalculator++;
 					if (current_Node.lesserSubNode == null) {
 						current_Node.lesserSubNode = toAdd;
 						current_Node = toAdd;
-					
+						if (level < levelCalculator)
+							level = levelCalculator;
 						return true;
 
 					} else {
 						current_Node = current_Node.lesserSubNode;
 					}
 				} else {
+					levelCalculator++;
 					if (current_Node.greaterSubNode == null) {
 						current_Node.greaterSubNode = toAdd;
 						current_Node = toAdd;
-
+						if (level < levelCalculator)
+							level = levelCalculator;
 						return true;
 
 					} else {
